@@ -66,7 +66,8 @@
           <div class="intro-text">
             <h1>Weera Pura</h1>
             <p>Restaurant & Takeaway</p>
-            <a href="header.html" class="btn btn-custom btn-lg page-scroll">Order My Lunch</a> </div>
+            <button class="btn btn-custom btn-lg" data-toggle="modal" data-target="#myModal">Order My Lunch</button>
+           </div>
         </div>
       </div>
     </div>
@@ -431,6 +432,37 @@
     </div>
   </div>
 </div>
+<div class="modal" id="myModal" style="box-shadow: 10px 10px 5px #aaaaaa;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Pick your delivary location</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      
+      <!-- Modal body -->
+      <div class="modal-body col-md-12" >
+        <div class="col-md-12">
+          <div class="col-md-6">
+              <button type="button" id="btn_first" class="btn btn-secondary" style="width: 100%;box-shadow: 10px 10px 5px #aaaaaa;background:#bd3100;font-size: x-large;color: white;height: 175px;" onclick="location.href='header.html'" >Office Address</button>
+          </div>
+          <div class="col-md-6">
+              <button type="button" id="btn_first" class="btn btn-secondary" style="width: 100%;box-shadow: 10px 10px 5px #aaaaaa;background:#bd3100;font-size: x-large;color: white;height: 175px;">Special Orders</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" style="background-color: #72a411;border: none;box-shadow: 10px 10px 5px #aaaaaa;">Close</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
 <div id="footer">
   <div class="container text-center">
     <div class="col-md-4">
@@ -476,5 +508,6 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 </body>
 </html>

@@ -517,7 +517,7 @@ var isMouseWheelSupported = 'onmousewheel' in document;
 if (isMouseWheelSupported && isChrome) {
 	addEvent("mousedown", mousedown);
 	addEvent("mousewheel", wheel);
-	addEvent("load", init);
+	//addEvent("load", init);
 };
 
 })();
